@@ -92,3 +92,21 @@ footer {
     bottom: 0; 
     font-size: 1rem; 
 }
+
+/* Media query para telas menores (ajuste o breakpoint conforme necessário) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Diminua ainda mais o tamanho da fonte em telas pequenas */
+    }
+
+    h2 {
+        font-size: 1rem; /* Diminua ainda mais o tamanho da fonte em telas pequenas */
+    }
+
+    section input {
+        font-size: 0.9rem; /* Diminua um pouco o tamanho da fonte do input */
+    }
+
+    section button {
+        font-size: 0.9rem; /* Diminua um pouco o tamanho da fonte do botão */
+    }
