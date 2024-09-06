@@ -93,20 +93,49 @@ footer {
     font-size: 1rem; 
 }
 
-/* Media query para telas menores (ajuste o breakpoint conforme necessário) */
-@media (max-width: 768px) {
+/* Media queries para diferentes tamanhos de tela */
+
+/* Telas pequenas (celulares em modo retrato) */
+@media (max-width: 480px) {
     h1 {
-        font-size: 1.8rem; /* Diminua ainda mais o tamanho da fonte em telas pequenas */
+        font-size: 1.5rem; 
     }
 
     h2 {
-        font-size: 1rem; /* Diminua ainda mais o tamanho da fonte em telas pequenas */
+        font-size: 0.9rem; 
     }
 
-    section input {
-        font-size: 0.9rem; /* Diminua um pouco o tamanho da fonte do input */
-    }
-
+    section input,
     section button {
-        font-size: 0.9rem; /* Diminua um pouco o tamanho da fonte do botão */
+        font-size: 0.8rem; 
     }
+
+    .item-resultado {
+        padding: 1rem; 
+    }
+
+    footer {
+        font-size: 0.8rem; 
+    }
+}
+
+/* Telas médias (celulares em modo paisagem e alguns tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 1rem; 
+    }
+
+    section input,
+    section button {
+        font-size: 0.9rem; 
+    }
+}
+
+/* Telas grandes (tablets maiores e computadores) */
+@media (min-width: 769px) {
+    /* Os estilos padrão já estão definidos para telas grandes */
+}
