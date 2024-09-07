@@ -1,20 +1,65 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* Estiliza o cabeçalho da página */
+header {
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Estiliza a navegação */
+nav {
+    width: 100%; 
+    margin-bottom: 1rem; 
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+}
+
+nav li a {
+    text-decoration: none; 
+    color: #333; 
+    padding: 0.5rem 1rem; 
+}
+
+nav li a:hover {
+    background-color: #ddd; 
+}
+
+/* Estiliza o título do cabeçalho */
+.titulo-cabecalho {
+    text-align: center; 
+    margin-top: 5rem; 
+    width: 100%; 
+    position: relative; 
+    z-index: 1; 
+}
+
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; 
-    background-color: #DDDDDD; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
     justify-content: center; 
-    height: 100vh; 
-    margin: 100px;
-    padding: 100px;
+    min-height: 100vh; 
+    margin-top: 5rem; 
+    padding: 20px; 
     background-image: url(/bi1.gif);
-    
-    
+    background-repeat: no-repeat;
+    background-size: contain; 
 }
 
 /* Estiliza os títulos h1 */
@@ -24,15 +69,16 @@ h1 {
     text-align: center; 
     letter-spacing: 0.4rem; 
     text-transform: capitalize;
-    
 }
 
+/* Estiliza os títulos h2 */
 h2{
     font-size: 18px;
     color: #ffffff;
     text-align: center; 
     letter-spacing: 0.4rem; 
 }
+
 /* Estiliza as seções da página */
 section {
     display: flex; 
@@ -53,6 +99,15 @@ section input {
     box-sizing: border-box; 
 }
 
+/* Agrupa e alinha os botões */
+.botoes-pesquisa {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 1rem; 
+    margin-top: 1rem; 
+}
+
 /* Estiliza os botões dentro das seções */
 section button {
     padding: 0.8rem 1.2rem; 
@@ -67,25 +122,24 @@ section button {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem;
-    /* height: 60vh; */ /* Remover altura fixa */
-    margin-top: 0.5rem; /* Reduzir margem superior */
+    margin-top: 0.5rem; 
     padding: 1rem; 
     border-radius: 1rem; 
-    overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+    overflow-y: auto; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
     background: #FFFFFF;
     border-radius: 0.6rem; 
-    padding: 1.5rem; /* Ajuste o padding conforme necessário */
-    margin-bottom: 1.5rem; /* Ajuste a margin conforme necessário */
+    padding: 1.5rem; 
+    margin-bottom: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estiliza o rodapé da página */
-footer {
-   
+footer { 
     color: #fafafa; 
     text-align: right; 
     padding: 1rem 0; 
@@ -94,57 +148,47 @@ footer {
     bottom: 0; 
     font-size: 1rem; 
 }
+
+/* Media queries para responsividade */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem; /* Tamanho da fonte em telas menores */
-        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+        font-size: 2rem; 
+        letter-spacing: 0.2rem; 
     }
 
     section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
-        padding: 0.8rem; /* Espaçamento interno em telas menores */
+        width: 25rem; 
+        padding: 0.8rem; 
     }
 
     .resultados-pesquisa {
-        width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
+        width: 40rem;
+        height: 40vh; 
     }
 
     .item-resultado h2 {
-        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+        font-size: 1.3rem; 
+    }
+
+    nav {
+        margin-bottom: 0.5rem; 
     }
 }
 
-/* Responsividade para celulares */
 @media (max-width: 480px) {
-
     h1 {
-        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem; 
     }
 
     section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
+        width: 17rem;
     }
 
     section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem; 
     }
 
     .resultados-pesquisa {
-        width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
-    }
-}
-
-
-
+        width: 90%;
