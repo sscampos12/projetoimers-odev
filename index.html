@@ -11,23 +11,39 @@
 
 <body>
     <header>
-        <h1>Encontre conforto na Palavra</h1>
-        <h2>Busque aqui o seu versículo</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Nova Pesquisa</a></li> 
+                <li><a href="https://www.bibliaonline.com.br/ntlh">Bíblia</a></li>
+                <li><a href="https://www.youtube.com/live/C4Yxc1a2gnk?si=Op2uN4waXGiMdrjB">Saúde da Alma</a></li>
+                <li><a href="https://www.devocionaldiario.com.br">Devocional</a></li>
+            </ul>
+        </nav>
+
+        <div class="titulo-cabecalho"> 
+            <h1>Encontre conforto na Palavra</h1>
+            <h2>Busque aqui o seu versículo</h2>
+        </div>
     </header>
+
     <main>
         <section>
             <input type="text" placeholder="Digite uma palavra para buscar o versiculo correspondente">
-            <button onclick="pesquisar()">Pesquisar</button>
-        </section>
-        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <div class="botoes-pesquisa"> 
+                <button onclick="pesquisar()">Pesquisar</button> 
+            </div>
+            <div class="resultados-pesquisa" id="resultados-pesquisa">
+            </div> 
         </section>
     </main>
+
     <footer>
         <p>2024 - Busca de Versículos. </p> 
-        <p>Entre em contato: contato@buscaversiculos.com</p>
-        
+        <p>contatosscampos@gmail.com</p>
     </footer>
+
     <script src="app.js"></script> 
+    <script src="dados.js"></script>
 </body>
 
 </html>
