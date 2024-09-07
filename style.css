@@ -30,12 +30,12 @@ nav ul {
 
 nav li a {
     text-decoration: none; 
-    color: #333; 
+    color: #fcfaf9; 
     padding: 0.5rem 1rem; 
 }
 
 nav li a:hover {
-    background-color: #ddd; 
+    background-color: #f07c1d; 
 }
 
 /* Estiliza o título do cabeçalho */
@@ -59,7 +59,7 @@ body {
     padding: 20px; 
     background-image: url(/bi1.gif);
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: cover; 
 }
 
 /* Estiliza os títulos h1 */
@@ -69,6 +69,7 @@ h1 {
     text-align: center; 
     letter-spacing: 0.4rem; 
     text-transform: capitalize;
+    margin-top: 6rem;
 }
 
 /* Estiliza os títulos h2 */
@@ -192,3 +193,5 @@ footer {
 
     .resultados-pesquisa {
         width: 90%;
+    }
+}
