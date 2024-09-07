@@ -1,4 +1,42 @@
-let versiculosPorSituacao = {
+function pesquisar() {
+  let section = document.getElementById("resultados-pesquisa");
+  let termoBusca = document.querySelector('input').value.trim().toLowerCase();
+
+  if (termoBusca === "") {
+    section.innerHTML = ""; 
+    return; 
+  }
+
+  let resultados = "";
+
+  for (let situacao in versiculosPorSituacao) {
+    if (situacao.toLowerCase().includes(termoBusca)) {
+      for (let versiculo of versiculosPorSituacao[situacao]) {
+        resultados += `
+          <div class="item-resultado">
+            <p>${versiculo}</p>
+          </div>
+        `;
+      }
+    } else {
+      for (let versiculo of versiculosPorSituacao[situacao]) {
+        if (versiculo.toLowerCase().includes(termoBusca)) {
+          resultados += `
+            <div class="item-resultado">
+              <p>${versiculo}</p>
+            </div>
+          `;
+        }
+      }
+    }
+  }
+
+  if (resultados === "") {
+    resultados = "<p>Nenhum versículo encontrado para esta situação.</p>";
+  }
+
+  section.innerHTML = resultados; 
+}let versiculosPorSituacao = {
     "Ansiedade": ["Filipenses 4:6-7 - Não andeis ansiosos por coisa alguma; em tudo, porém, sejam conhecidas, diante de Deus, as vossas petições, pela oração e pela súplica, com ações de graças.", "Mateus 6:34 - Portanto, não vos inquieteis com o dia de amanhã, pois o amanhã trará os seus cuidados; basta ao dia o seu próprio mal."],
     "Tristeza": ["Salmo 34:18 - O Senhor está perto dos que têm o coração quebrantado e salva os de espírito abatido.", "João 16:22 - Agora, vós tendes tristeza; mas outra vez vos verei; o vosso coração se alegrará, e a vossa alegria ninguém poderá tirar."],
     "Depressão": ["Salmo 42:5 - Por que estás abatida, ó minha alma? Por que te perturbas dentro de mim? Espera em Deus, pois ainda o louvarei; ele é a minha salvação e o meu Deus.", "Isaías 41:10 - Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus; eu te fortaleço, e te ajudo, e te sustento com a destra da minha justiça."],
