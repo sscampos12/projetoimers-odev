@@ -13,7 +13,7 @@ body {
     margin: 100px;
     padding: 100px;
     background-image: url(/bi1.gif);
-    background-size: contain; no repeat;
+    background-repeat: no-repeat;
     
 }
 
