@@ -41,7 +41,7 @@ nav li a:hover {
 /* Estiliza o título do cabeçalho */
 .titulo-cabecalho {
     text-align: center; 
-    margin-top: 5rem; 
+    margin-top:4rem; 
     width: 100%; 
     position: relative; 
     z-index: 1; 
@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center; 
     min-height: 100vh; 
-    margin-top: 5rem; 
+    margin-top: 4rem; 
     padding: 20px; 
     background-image: url(/bi1.gif);
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@ h1 {
     text-align: center; 
     letter-spacing: 0.4rem; 
     text-transform: capitalize;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 /* Estiliza os títulos h2 */
@@ -92,7 +92,7 @@ section {
 section input {
     width: 80%; 
     border: none; 
-    padding: 1rem; 
+    padding: 2rem; 
     border-radius: 1.5rem;
     margin-bottom: 1rem; 
     color: #45474B;
