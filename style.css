@@ -114,7 +114,7 @@ section button {
     padding: 0.8rem 1.2rem; 
     border: none;
     border-radius: 1.5rem;
-    background-color: #ffffff; /* Remove a cor de fundo padrão */
+    backgraund-color: #457278 /* Remove a cor de fundo padrão */
     color: #fcfaf9; /* Cor do texto igual aos links */
     font-size: 1rem;
     cursor: pointer; 
