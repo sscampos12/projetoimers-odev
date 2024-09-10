@@ -55,8 +55,8 @@ body {
     align-items: center;
     justify-content: center; 
     min-height: 100vh; 
-    margin-top: 5rem; 
-    padding: 20px; 
+    margin-top: 4rem; 
+    padding: 15px; 
     background-image: url(/bi1.gif);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -69,7 +69,7 @@ h1 {
     text-align: center; 
     letter-spacing: 0.4rem; 
     text-transform: capitalize;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 /* Estiliza os títulos h2 */
