@@ -114,7 +114,7 @@ section button {
     padding: 0.8rem 1.2rem; 
     border: none;
     border-radius: 1.5rem;
-    background-color: transparent; /* Remove a cor de fundo padrão */
+    background-color: #ffffff; /* Remove a cor de fundo padrão */
     color: #fcfaf9; /* Cor do texto igual aos links */
     font-size: 1rem;
     cursor: pointer; 
@@ -126,8 +126,8 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem;
-    margin-top: 0.5rem; 
+    width: 80rem;
+    margin-top: 1.5rem; 
     padding: 1rem; 
     border-radius: 1rem; 
     overflow-y: auto; 
