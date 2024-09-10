@@ -40,7 +40,6 @@ function pesquisar() {
 }
 
 function limparPesquisa() {
-  document.querySelector('input').value = ""; 
-  document.getElementById("resultados-pesquisa").innerHTML = ""; 
-  window.location.href = "index.html"; 
+  document.querySelector('input').value = ""; // Limpa o campo de entrada
+  document.getElementById("resultados-pesquisa").innerHTML = ""; // Limpa os resultados
 }
