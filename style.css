@@ -114,10 +114,14 @@ section button {
     padding: 0.8rem 1.2rem; 
     border: none;
     border-radius: 1.5rem;
-    background-color: #30475E;
-    color: #F5F7F8; 
+    background-color: transparent; /* Remove a cor de fundo padrão */
+    color: #fcfaf9; /* Cor do texto igual aos links */
     font-size: 1rem;
     cursor: pointer; 
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+section button:hover {
+    background-color: #f07c1d; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
