@@ -55,8 +55,8 @@ body {
     align-items: center;
     justify-content: center; 
     min-height: 100vh; 
-    margin-top: 4rem; 
-    padding: 15px; 
+    margin-top: 5rem; 
+    padding: 20px; 
     background-image: url(/bi1.gif);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -69,7 +69,7 @@ h1 {
     text-align: center; 
     letter-spacing: 0.4rem; 
     text-transform: capitalize;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 /* Estiliza os títulos h2 */
@@ -114,20 +114,16 @@ section button {
     padding: 0.8rem 1.2rem; 
     border: none;
     border-radius: 1.5rem;
-    backgraund-color: #457278 /* Remove a cor de fundo padrão */
-    color: #fcfaf9; /* Cor do texto igual aos links */
+    background-color: #30475E;
+    color: #F5F7F8; 
     font-size: 1rem;
     cursor: pointer; 
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
-}
-section button:hover {
-    background-color: #f07c1d; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 80rem;
-    margin-top: 1.5rem; 
+    width: 60rem;
+    margin-top: 0.5rem; 
     padding: 1rem; 
     border-radius: 1rem; 
     overflow-y: auto; 
